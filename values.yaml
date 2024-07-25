@@ -1,0 +1,19 @@
+replicaCount: 1
+
+image:
+  repository: babimnegev/java-docker
+  tag: v1.0.0
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 8080
+  nodePort: 30021
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
